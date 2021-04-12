@@ -1,0 +1,33 @@
+.navbar{
+    display: flex;
+}
+.nav-right{
+    align-self: flex-start;
+}
+.nav-right{
+    align-self: flex-end;
+}
+.nav-left a{
+    text-decoration: none;
+    color:black;
+    font-family: 'Poppins', sans-serif;
+   	line-height: 1.3em;
+    padding-right: 20px;
+    
+   font-size: 18px;
+}
+.nav-left a:hover{
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+.logo{
+    margin-left: 20px;
+    height: 50px;
+}
+.active {
+    border-bottom: 2px solid #29b6f6;
+    transition: border-bottom .5s ease-in-out;
+  }
+  
+
+ 
