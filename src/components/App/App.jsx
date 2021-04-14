@@ -5,8 +5,9 @@ import NavBar from '../NavBar/NavBar';
 import {Container } from 'react-bootstrap'
 import {BrowserRouter as Router, Route} from 'react-router-dom'
 import {Switch} from 'react-router-dom'
-import Work from '../Work/Work'
+import {Work} from '../Work/Work'
 import './App.scss';
+import ProjectCarousel from '../ProjectCarousel/ProjectCarousel';
 const App = () => {
   return (
     <div className="app">
@@ -16,6 +17,7 @@ const App = () => {
       <Switch>
   <Route path="/" component={About} exact/>
   <Route path="/work" component={Work} exact/>
+  <Route path="/projects" component={ProjectCarousel} exact/>
   </Switch>
 </Container>
       <Footer/>

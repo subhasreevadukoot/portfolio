@@ -11,18 +11,20 @@ const About = () => {
     return (
 <div className="about">
 <CardGroup >
-<Card border="light">
 <Row className='justify-content-md-center'>
-    <Col xs={4} md={6}>
+<Col md={4}>
+<Card border="light">    
     <Card.Img  variant="flush" alt='my image' src={photo} className="myimage" rounded/>
     
-    </Col>
-</Row>
+   
+
  </Card>
+ </Col>
+ <Col md={8}>
   <Card border="light">
       <Card.Body>
-    <Row className='justify-content-md-center'>
-        <Col>
+
+       
       <Card.Title className='name'><Typewriter
   options={{
     strings: ['Subhasree Vadukoot'],
@@ -35,29 +37,36 @@ const About = () => {
       Technology Analyst at Bank of America
       </Card.Text>
       <Card.Text className='desc'>
-      I have completed my Master's in Big Data Analytics and Bachelor's in Computer Science, Mathematics and Electronics.
-      I am a bit of everything that I have learnt and experienced, but my current interest and strongest passion is for the Web. I am amazed by its scale, depth and the endless opportunities
-      . Okay, I know, who doesn't love the Web anyways? 
-      <p>When I am not coding or learning, I love to read novels and write poetry. 
-        <p></p>Yeah, so my ambition is to become a spontaneous mix of a poet and a developer !</p>
+      <p align='justify'>I have strong experience in Software Development and I love the Web and all things <q>Web</q>! I have completed my Master's in Big Data Analytics and Bachelor's in Computer Science, Mathematics and Electronics.
+      I am a bit of everything that I have learnt and experienced, but most of my time now is spent in VS Code, Chrome Dev Tools and the console. I am amazed by the scale, depth and the endless opportunities
+      of software development. </p>
+      <p align='justify'>When I am not coding or learning to code in a new language, I love to read novels and write poetry. 
+        Yeah, so my long term goal is to become a spontaneous mix of a poet and a developer !</p>
       
       </Card.Text>
       <Card.Text className='icons'>
       <p></p>
-      <span><i class="fab fa-facebook fa-lg" ></i></span>
-      <span><i class="fab fa-instagram fa-lg"></i></span>
-      <span> <i class="fab fa-linkedin fa-lg"></i></span>
-      <span> <i class="fab fa-twitter fa-lg"></i></span>
+     
+      <a style={{textDecoration:'none', color:'black'}} 
+      href="https://github.com/subhasreevadukoot"
+      target='_blank' rel="noreferrer">  <span><i class="fab fa-github" aria-hidden="true"></i></span></a>
+     <a style={{textDecoration:'none', color:'black'}}href="https://www.linkedin.com/in/subhasree-vadukoot/"
+     target='_blank' rel="noreferrer"> <span> <i class="fab fa-linkedin"></i></span></a>
+     
       </Card.Text>
-      </Col>
-      </Row>
-    </Card.Body>
    
-  </Card>
+      </Card.Body>
+   
+   </Card>
+   </Col>
+      </Row>
+  
   </CardGroup>
   
   <CardColumns className="d-flex justify-content-center about-section">
- 
+    <Container>
+ <Row>
+   <Col>
    <div className="about-section-education">
   <Card>
   <i class="fas fa-user-graduate"></i>
@@ -76,6 +85,34 @@ const About = () => {
     </Card.Body>
   </Card>
   </div>
+   </Col>
+   <Col>
+   <div className="about-section-experience">
+  <Card>
+  <i class="fas fa-laptop-code"></i>
+    <Card.Body>
+      <Card.Title className="about-head">Experience</Card.Title>
+      <Card.Text className="about-text">
+      <p><strong>Technology Analyst, Bank of America </strong></p>
+      <p>
+      <ul>
+        <li>Designing and maintaining Technology Applications built using Oracle, Java and AngularJS for critical regulatory reporting purposes.</li>
+      
+<li>Collaborating with QA team to create efficient test plans and scripts while working together in an Agile team and participating in code review using BitBucket, Git and Agile tools.</li>
+<li>Gathering and translating requirements to technical design specifications keeping scalability in mind.</li>
+<li>Writing clean, robust code adhering to the standards and using version control to collaborate with other developers thereby ensuring smooth deployment and release.</li>
+<li>Acting as a buddy to the Interns in the team by providing Knowledge Transfer and overall support.  </li>
+</ul>
+      </p>
+      </Card.Text>
+    </Card.Body>
+  </Card>
+  </div>
+   
+   </Col>
+ </Row>
+<Row>
+  <Col>
   <div className="about-section-subject">
   <Card>
   <i class="fas fa-book"></i>
@@ -95,6 +132,8 @@ Operating Systems</ListGroup.Item>
     </Card.Body>
   </Card>
   </div>
+  </Col>
+  <Col>
   <div className="about-section-languages">
 
   <Card>
@@ -103,17 +142,22 @@ Operating Systems</ListGroup.Item>
       <Card.Title className="about-head">Programming Languages and Frameworks</Card.Title>
       <Card.Text className="about-text">
       <ListGroup variant="flush">
-      <ListGroup.Item >React, Django</ListGroup.Item>
-  <ListGroup.Item >JavaScript, Java, Python</ListGroup.Item>
+      <ListGroup.Item >React, Redux, Django, Node JS</ListGroup.Item>
+  <ListGroup.Item >JavaScript, Java, Python, HTML </ListGroup.Item>
   <ListGroup.Item>MySQL, Oracle</ListGroup.Item>
-  <ListGroup.Item>R, HTML, CSS </ListGroup.Item>
-  <ListGroup.Item><strong>Tools:</strong> Visual Studio Code, Toad, Weka, RStudio, Jupyter Notebook, Tableau, IntelliJ</ListGroup.Item>
+  <ListGroup.Item>BootStrap, CSS, SASS </ListGroup.Item>
+  <ListGroup.Item><strong>Tools:</strong> Visual Studio Code, Toad, Weka, RStudio, Jupyter Notebook, Tableau, IntelliJ, Chrome Dev Tools</ListGroup.Item>
+  <ListGroup.Item>Agile, Scrum, Git, BitBucket</ListGroup.Item>
 </ListGroup>
       </Card.Text>
     </Card.Body>
   </Card>
  
   </div>
+  </Col>
+</Row>
+</Container>
+  
 </CardColumns>
 
 

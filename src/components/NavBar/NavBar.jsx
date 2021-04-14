@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from './../../assets/logo.png';
-import resume from './../../assets/Subhasree_Vadukoot_Resume_SDE.pdf';
+import resume from './../../assets/Subhasree_Vadukoot_Resume.pdf';
 import './NavBar.scss'
 import {NavLink} from 'react-router-dom'
 import {Navbar,Nav,Button,Form,FormControl,Container,Row,Col } from 'react-bootstrap'

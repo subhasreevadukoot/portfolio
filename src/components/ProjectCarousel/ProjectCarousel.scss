@@ -1,0 +1,153 @@
+
+.container {
+margin:1rem;
+}
+.projects{
+    font-family: 'Poppins',sans-serif;
+}
+.project-title{
+    font-size: 5rem;
+    text-align: center;
+}
+
+/*-------- flex container --------*/
+.flex-container {
+	display: flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: -webkit-flex;
+	justify-content: space-around;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	-webkit-flex-flow: row wrap;
+	position: relative;
+}
+.flex-item {
+	color: #fff;
+	height: 210px;
+	margin: 10px 0;
+	padding: 0;
+	width: 225px;
+	position: relative;
+}
+.flex-item-inner {
+	display: flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: -webkit-flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	height: 210px;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+.flex-item-inner a {
+	color: #fff;
+	cursor: pointer;
+}
+
+/*-------- cards --------*/
+.card-front,
+.card-back {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 185px;
+	height: 170px;
+	padding: 20px;
+	margin: 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+	justify-content: flex-end;
+}
+.card-front i.tile-icon {
+	display: block;
+	margin: 10px auto 20px auto;
+	text-align: center;
+}
+.card-front h4 {
+	font-size: 18px;
+	font-weight: normal;
+	margin: 10px 0;
+}
+.card-front p.detail {
+	font-size: 24px;
+	font-weight: bold;
+	margin: 0;
+}
+.card-front.bg-rose {
+	background-color:gainsboro;
+}
+.card-front.bg-lemon {
+	background-color:#ECE4B7;
+}
+.card-front.bg-cyan {
+	background-color: #D0F4EA;
+}
+
+.card-back {
+	background-color: #c8d7df;
+	-webkit-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
+}
+.card-back p.title {
+	color: white;
+	margin-top: 0;
+	text-transform: uppercase;
+}
+.card-back p.desc {
+	color: #63666a;
+}
+.card-back p.link {
+	color: #702082;
+}
+.card-back.bg-violet {
+	background-color: #d8d7df;
+}
+.card-back.bg-magenta {
+	background-color: #ddd0cf;
+}
+.card-back.bg-blue {
+	background-color: #c8d7df;
+}
+.card-back.bg-green {
+	background-color: #d9e6dc;
+}
+
+/*-------- cards / flip effect --------*/
+.flex-item:hover .card-front {
+	-webkit-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
+}
+.flex-item:hover .card-back {
+	-webkit-transform: rotateY(0);
+	transform: rotateY(0);
+}
+
+
+.card {
+    margin: 2rem auto;
+  }
+  .image {
+    width: 100%;
+    height: 0;
+    padding-bottom: 50%;
+    transition: 0.1s linear;
+    
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .card-title {
+    margin-bottom: 1rem;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 900;
+  }
+
+
