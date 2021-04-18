@@ -4,8 +4,8 @@ import './Info.scss'
 const Info = () => {
     return (
         <div>
-              <CardColumns id='details' className="d-flex justify-content-center about-section">
-    <Container>
+    <CardColumns id='details' className="d-flex justify-content-center about-section">
+    <Container max-width='50%'>
 
    <Row>
    <Col>

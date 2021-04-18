@@ -9,6 +9,9 @@ const Footer = () => {
                    <Col className='text-center py-3'>
                        &copy; Subhasree Vadukoot | subhasreevadukoot@gmail.com
                    </Col>
+                   <Col className='text-center py-3'>
+                      <strong><p style={{fontFamily: "'Amatic SC', cursive"}}>LET'S MAKE THE WEB MORE BEAUTIFUL FOR EVERYONE!</p></strong>
+                   </Col>
                </Row>
            </Container>
        </footer>
