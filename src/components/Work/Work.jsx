@@ -1,4 +1,5 @@
 import React from 'react'
+import {BrowserRouter as Router, Route,Link} from 'react-router-dom'
 import { Tabs, Tab, ListGroup, Card, CardDeck, Nav, Button, Form, FormControl, Container, Row, Col, CardColumns } from 'react-bootstrap'
 import './Work.scss'
 import climateconvo from './../../assets/climateconvo.png';
@@ -9,11 +10,12 @@ import tasked from './../../assets/tasked.png';
 import dmat from './../../assets/dmat.png';
 import { useState } from 'react'
 import Overlay from 'react-bootstrap/Overlay'
-import {postItDescriptionText,postItDesignDecisions,postItMotivationText,postIttechStack} from './projectConstants'
+
 import ProjectCarousel from '../ProjectCarousel/ProjectCarousel';
 
 export const Work = () => {
   const [key, setKey] = useState('all');
+  
   return (
     <div>
       <Tabs style={{color:'black'}}
@@ -23,10 +25,7 @@ export const Work = () => {
         defaultActiveKey="all" transition={false}
         className='tabs-projects'>
         <Tab eventKey="all" title="All">
-          <CardProjects projectType={key} 
-          motivationText={postItMotivationText}
-          descriptionText={postItDescriptionText}
-          techStack={postIttechStack}/>
+          <CardProjects projectType={key} />
         </Tab>
         <Tab eventKey="python" title="Python">
           <CardProjects projectType={key} />
@@ -47,7 +46,8 @@ export const Work = () => {
 
 
 
-export const CardProjects = ({ projectType,motivationText,descriptionText,techStack }) => {
+export const CardProjects = ({ projectType,history }) => {
+  const [id, setId] = useState('postIt');
   console.log(projectType)
   if (projectType === 'all') {
     console.log('alltrue')
@@ -56,21 +56,12 @@ export const CardProjects = ({ projectType,motivationText,descriptionText,techSt
 
         <CardDeck className="d-flex justify-content-center projects">
           <Row>
-
             <Card >
-
               <Card.Body>
-
-                <Card.Img variant="top" src={postit} />
-               <ProjectCarousel headerText={'PostIt'}
-               titleText={'Social Media Clone'}
-               subTitleText={'Built with Python and Django'}
-               motivationText={motivationText}
-               descriptionText={descriptionText}
-               techStack={techStack}/>
-
+                 <Card.Img variant="top" src={postit} />
+                <Link to={`/projects/${'postIt'}`} 
+                className="stretched-link"> </Link>
               </Card.Body>
-
             </Card>
 
             <Card>
@@ -78,7 +69,8 @@ export const CardProjects = ({ projectType,motivationText,descriptionText,techSt
               <Card.Body>
 
                 <Card.Img variant="top" src={shopper} />
-                <a href="/" class="stretched-link"> </a>
+                <Link to={`/projects/${'shopper'}`} 
+                className="stretched-link"> </Link> 
               </Card.Body>
 
             </Card>
@@ -86,7 +78,7 @@ export const CardProjects = ({ projectType,motivationText,descriptionText,techSt
               <Card.Body>
 
                 <Card.Img variant="top" src={tasked} />
-                <a href="/" class="stretched-link"> </a>
+                <Link to="/projects" className="stretched-link"> </Link>
               </Card.Body>
 
             </Card>
@@ -97,7 +89,7 @@ export const CardProjects = ({ projectType,motivationText,descriptionText,techSt
               <Card.Body>
 
                 <Card.Img variant="top" src={blissfulcell} />
-                <a href="/" class="stretched-link"> </a>
+                <Link t0="/" className="stretched-link"> </Link>
               </Card.Body>
 
             </Card>
@@ -107,7 +99,7 @@ export const CardProjects = ({ projectType,motivationText,descriptionText,techSt
               <Card.Body>
 
                 <Card.Img variant="top" src={climateconvo} />
-                <a href="/" class="stretched-link"> </a>
+                <a href="/" className="stretched-link"> </a>
               </Card.Body>
 
             </Card>
@@ -115,7 +107,7 @@ export const CardProjects = ({ projectType,motivationText,descriptionText,techSt
               <Card.Body>
 
                 <Card.Img variant="top" src={dmat} />
-                <a href="/" class="stretched-link"> </a>
+                <a href="/" className="stretched-link"> </a>
               </Card.Body>
 
             </Card>
@@ -137,7 +129,7 @@ export const CardProjects = ({ projectType,motivationText,descriptionText,techSt
               <Card.Body>
 
                 <Card.Img variant="top" src={postit} />
-                <a href="/projects" class="stretched-link"> </a>
+                <a href="/projects" className="stretched-link"> </a>
 
               </Card.Body>
 
@@ -148,7 +140,7 @@ export const CardProjects = ({ projectType,motivationText,descriptionText,techSt
               <Card.Body>
 
                 <Card.Img variant="top" src={tasked} />
-                <a href="/" class="stretched-link"> </a>
+                <a href="/" className="stretched-link"> </a>
               </Card.Body>
 
             </Card>
@@ -161,7 +153,7 @@ export const CardProjects = ({ projectType,motivationText,descriptionText,techSt
               <Card.Body>
 
                 <Card.Img variant="top" src={climateconvo} />
-                <a href="/" class="stretched-link"> </a>
+                <a href="/" className="stretched-link"> </a>
               </Card.Body>
 
             </Card>
@@ -186,7 +178,7 @@ export const CardProjects = ({ projectType,motivationText,descriptionText,techSt
               <Card.Body>
 
                 <Card.Img variant="top" src={shopper} />
-                <a href="/projects" class="stretched-link"> </a>
+                <a href="/projects" className="stretched-link"> </a>
 
               </Card.Body>
 
@@ -211,7 +203,7 @@ export const CardProjects = ({ projectType,motivationText,descriptionText,techSt
               <Card.Body>
 
                 <Card.Img variant="top" src={blissfulcell} />
-                <a href="/projects" class="stretched-link"> </a>
+                <a href="/projects" className="stretched-link"> </a>
 
               </Card.Body>
 
@@ -239,7 +231,7 @@ export const CardProjects = ({ projectType,motivationText,descriptionText,techSt
               <Card.Body>
 
                 <Card.Img variant="top" src={dmat} />
-                <a href="/projects" class="stretched-link"> </a>
+                <a href="/projects" className="stretched-link"> </a>
 
               </Card.Body>
 

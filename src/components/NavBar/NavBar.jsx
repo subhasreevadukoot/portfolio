@@ -3,7 +3,7 @@ import logo from './../../assets/logo.png';
 import resume from './../../assets/Subhasree_Vadukoot_Resume.pdf';
 import './NavBar.scss'
 import {NavLink} from 'react-router-dom'
-import {Navbar,Nav,Button,Form,FormControl,Container,Row,Col } from 'react-bootstrap'
+import {Nav} from 'react-bootstrap'
 const NavBar = () => {
  
     return (
@@ -17,6 +17,10 @@ const NavBar = () => {
         <Nav.Item>
           <NavLink  exact to="/" activeClassName="active">About me</NavLink>
         </Nav.Item>
+        <Nav.Item>
+          <NavLink  exact to="/info" activeClassName="active">Experience</NavLink>
+        </Nav.Item>
+
         <Nav.Item>
           <NavLink  exact to="/work" activeClassName="active">Work</NavLink>
         </Nav.Item>
