@@ -20,11 +20,7 @@ const NavBar = () => {
         <Nav.Item>
           <NavLink  exact to="/" activeClassName="active">About me</NavLink>
         </Nav.Item>
-        <Nav.Item>
-          <NavLink  exact to="/info" activeClassName="active">Experience</NavLink>
-        </Nav.Item>
-
-        <Nav.Item>
+             <Nav.Item>
           <NavLink  exact to="/work" activeClassName="active">Work</NavLink>
         </Nav.Item>
         <Nav.Item>

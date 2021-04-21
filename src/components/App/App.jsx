@@ -8,7 +8,7 @@ import {Switch} from 'react-router-dom'
 import {Work} from '../Work/Work'
 import './App.scss';
 import ProjectCarousel from '../ProjectCarousel/ProjectCarousel';
-import Info from '../Info/Info';
+
 const App = () => {
   return (
     <div className="app">
@@ -19,7 +19,7 @@ const App = () => {
   <Route path="/" component={About} exact/>
   <Route path="/work" component={Work} exact/>
   <Route path="/projects/:id" component={ProjectCarousel} exact/>
-  <Route path="/info" component={Info} exact/>
+  
   </Switch>
 </Container>
       <Footer/>
