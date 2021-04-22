@@ -14,7 +14,7 @@ export const Work = () => {
    
   return (
     <div>
-   <CardDeck className="d-flex justify-content-center projects">
+   <CardDeck className="d-flex justify-content-center projects" style={{justifyContent:'space-between'}}>
           <Row>
             <Card >
               <Card.Body>
