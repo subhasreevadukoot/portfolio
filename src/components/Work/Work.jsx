@@ -28,8 +28,8 @@ export const Work = () => {
 
               <Card.Body>
 
-                <Card.Img variant="top" src={shopper} />
-                <Link to={`/projects/${'shopper'}`} 
+                <Card.Img variant="top" src={climateconvo} />
+                <Link to={`/projects/${'climateconvo'}`} 
                 className="stretched-link"> </Link> 
               </Card.Body>
 
@@ -60,8 +60,8 @@ export const Work = () => {
 
               <Card.Body>
 
-                <Card.Img variant="top" src={climateconvo} />
-                <Link to={`/projects/${'climateconvo'}`} 
+                <Card.Img variant="top" src={shopper} />
+                <Link to={`/projects/${'shopper'}`} 
                 className="stretched-link"> </Link>
               </Card.Body>
 

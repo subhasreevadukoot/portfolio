@@ -92,7 +92,8 @@ sourceLink:'https://github.com/subhasreevadukoot/Shopper',
 blissfulcell:{name:'Blissful Cell',
 projectImage:[blissfulcell1,blissfulcell2,blissfulcell4],
 subTitleText:'The happiness App',
-descriptionText:'BlissfulCell is a platform built with basic web development tools and languages. The project was built by following complete Software Development Life Cycle and keeping in mind the needs of different use cases. The intended users of the application are NGO organizations, volunteers, individuals',
+descriptionText:`BlissfulCell is a platform built with basic web development tools and languages. The project was built by following complete Software Development Life Cycle and keeping in mind the needs of different use cases. The intended users of the application are NGO organizations, volunteers, individuals. Users can use the website with or without registering. Registered users get some extra features. The application can be used by all age groups, children can use the site under the monitoring of their parents.
+The main focus while building this application was aesthetics, as the colors, look and feel matters to everyone, but matters more to people with mental health issues.`,
 motivationText:"Today’s hectic, high-paced lifestyle may trigger the “fight-or-flight” response repeatedly over days, weeks, months or even years. With little time between “stressful” events, our nervous systems can’t repair properly and eventually are unable to manage what used to be low-stress events. Body responds by sending out dangerously high level of stress hormones. These are harmful in the long run. When the stress cycle continues without relief, more than emotions can seem to be out of control and the results can begin to manifest as physical discomfort. The project aims to contribute to the efforts to tackle mental health issues",
 designDecisions:['Aesthetically appealing to the users', 'Fun activities like games to cater to younger audience','Regional music','Motivational quotes and stories'],
 techStack:[
@@ -217,14 +218,14 @@ blood sugar) causes unplanned readmission in diabetes patients (ScienceDaily, 20
 Readmission cause extreme financial burden on the diabetes patients and decrease the
 reputation of the hospitals. Predicting readmissions can help in strategy making,
 enhanced diagnosis, pattern prediction and thereby help the patients and hospitals alike. `,
-designDecisions:['To predict diabetes readmission risks through classification techniques and association rule mining after understanding the effects of diabetes in patients through literature review and detailed study of the Diabetes 130-US hospitals for years 1999- 2008 Data Set and its attributes',
-    `To apply various feature selection methods in Weka to identify the best features
+designDecisions:['Predicted diabetes readmission risks through classification techniques and association rule mining after understanding the effects of diabetes in patients through literature review and detailed study of the Diabetes 130-US hospitals for years 1999- 2008 Data Set and its attributes',
+    `Applied various feature selection methods in Weka to identify the best features
     and to vary the hyperparameters to find and evaluate the models with better
     performance and accuracy after training the model and testing on the trained model.
-    `,`To implement and evauate ensemble methods such as Bagging, Boosting in Weka
+    `,`Implemented and evauated ensemble methods such as Bagging, Boosting in Weka
     Experimenter to understand the effect of these ensemble methods on the model with
     J48 algorithm.
-    `,`To discover patterns by generating association rules from the dataset using
+    `,`Discovered patterns by generating association rules from the dataset using
     Association Rule Mining, Apriori Algorithms and to evaluate the rules from their
     confidence, support and lift.` ],
 techStack:[
@@ -256,7 +257,7 @@ efforts to reduce destructive human intervention and promote constructive
 collaboration.
 Now more than ever, every bit of effort helps!!
 `,
-designDecisions:`
+designDecisions:[`
 The main idea of this project is to analyse sentiments of the public in the matters of
 climate change, global warming and increasing natural hazards. This can contribute in
 the efforts in saving the planet, by using the power of opinion mining to create
@@ -277,23 +278,19 @@ with solutions such as planting trees, collecting and recycling plastic waste an
 local governments or companies to take action to reduce pollution and emissions. UN
 secretary-general António Guterres suggests that planting trees can dramatically
 improve the climate patterns, as trees remove carbon dioxide from the environment and
-release oxygen, reduces soil erosion, shelter various species and increase rainfall [5].
-Furthermore, planting trees is a simple step that can be undertaken by citizens
-themselves without waiting for governments to take action. Initially, the project will
-focus on the climate data available in a particular country, and then connect residents
+release oxygen, reduces soil erosion, shelter various species and increase rainfall.
+Initially, the project will focus on the climate data available in a particular country, and then connect residents
 of the country, organizations and volunteers to start developing strategies to save the
 fragile regions. Moreover, since the application has possibilities for interaction, this can
 be used during a natural disaster such as floods, to organize and distribute resources to
 those affected, and helps to arrange volunteers for rescue operations.
 The application will have a dashboard that conveys the visualized climate data in a
 meaningful format, which will be understandable to the public with the least knowledge.
-
-of data analytics and climate science also. There will be a forum where the public can
+of data analytics and climate science also. There is a forum where the public can
 ask questions or start discussions based on the data that they see on the dashboard each
 day. Each user will have to register with the application, and their general data such as
 name, email and password will be collected for security reasons. The data will be stored
-in a safe and private database.
-The foundation of the application lies in the ability to differentiate sentiments into belief
+in a safe and private database.`,`The foundation of the application lies in the ability to differentiate sentiments into belief
 and denial which is a challenging task given the unavailability of data and little prior
 work. The application will use climate data- especially data on air quality index,
 emission reports, loss of forest cover and so on that is released by World Bank, NASA,
@@ -305,7 +302,7 @@ Ireland will be of value to the project. Their website clearly shows the trend o
 various emissions, air quality, waste management and so on. The users of the
 application will be public of Ireland, non-governmental organizations working towards
 a sustainable planet and other volunteers. 
-`,
+`],
 techStack:[
     'Python, Tableau',
     'MongoDB,Tweepy',

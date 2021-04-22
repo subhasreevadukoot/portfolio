@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-
+import './ProjectCarousel.scss'
 import {projectDetails} from '../ProjectCarousel/projectConstants'
 import {Carousel} from 'react-bootstrap'
 const ProjectCarousel = ({match}) => {
@@ -14,7 +14,7 @@ return (
     <h6 className="card-subtitle text-muted">{projectDetails[match.params.id]['subTitleText']}</h6>
  <p></p>
 <div className='imagecard'>
-<Carousel className='project-carousel bg-dark' style={{color:'lightgrey'}}>
+<Carousel className='project-carousel'>
   <Carousel.Item>
     <img
       className="d-block w-100"
@@ -23,8 +23,7 @@ return (
      
     />
     <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+     
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -35,8 +34,7 @@ return (
     />
 
     <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -47,8 +45,7 @@ return (
     />
 
     <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
@@ -61,8 +58,9 @@ return (
    <h3> Motivation</h3>
 <p>{projectDetails[match.params.id]['motivationText']}</p>
 <h3>Description</h3>
-<p style={{textAlign:'justify'}}>{projectDetails[match.params.id]['descriptionText']}
-</p></p>
+<p style={{textAlign:'justify'}}>{projectDetails[match.params.id]['descriptionText']}</p>
+
+</p>
   </div>
   <div className="card-body">
   <h3>Technology Stack</h3>
@@ -76,11 +74,11 @@ return (
   </div>
   <div className='card-body'>
   <div className="card-text">
-  {(projectDetails[match.params.id]['name']===("Shopper"||"Blissful Cell"||"dmat"))?<h3>Features</h3>: <h3>Design Decisions</h3>}
- 
+  {(match.params.id==="shopper"||match.params.id==="climateconvo"||match.params.id==="blissfulcell"||match.params.id==="dmat")?(<h3>Features</h3>): (<h3>Design Decisions</h3>)}
 
-  {(projectDetails[match.params.id]['name']===("Shopper"||"Blissful Cell"||'dmat'))?
-  <p style={{textAlign:'justify'}}>
+
+  {(match.params.id==="shopper"||match.params.id==="blissfulcell"||match.params.id==="dmat")?
+  (<p style={{textAlign:'justify'}}>
     <ul className="list-group list-group-flush"> 
     <li className="list-group-item">{projectDetails[match.params.id]['designDecisions'][0]}</li>
     <li className="list-group-item">{projectDetails[match.params.id]['designDecisions'][1]}</li>
@@ -88,17 +86,28 @@ return (
     <li className="list-group-item">{projectDetails[match.params.id]['designDecisions'][3]}</li>
     <li className="list-group-item">{projectDetails[match.params.id]['designDecisions'][4]}</li>
   </ul> 
-  </p>
+  </p>)
 :(
     <p style={{textAlign:'justify'}}>
-  <p>{projectDetails[match.params.id]['designDecisions']} </p></p>) }
+  <p>{projectDetails[match.params.id]['designDecisions']} </p></p>)}
   </div>
+  {(match.params.id==="climateconvo") && (
+    <div><h3>Research Objectives</h3>
+    <ul className="list-group list-group-flush"> 
+    <li className="list-group-item">{projectDetails[match.params.id]['researchObjective'][0]}</li>
+    <li className="list-group-item">{projectDetails[match.params.id]['researchObjective'][1]}</li>
+
+  </ul> </div>
+
+    )}
   </div>
+
   <div className="card-body">
     <a href={projectDetails[match.params.id]['sourceLink']} target='_blank' rel='noreferer'
     className="card-link" alt='Source code'>
-    <button type="button" class="btn btn-dark">Source Code / Documentation</button></a>
-    
+    {(match.params.id!=="shopper") && (<button type="button" class="btn btn-dark">Source Code / Documentation</button>)}
+    </a>
+
   </div>
   <div className="card-footer text-muted">
    

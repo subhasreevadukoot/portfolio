@@ -3,12 +3,11 @@ import logo from './../../assets/logo.png';
 import resume from './../../assets/Subhasree_Vadukoot_Resume.pdf';
 import './NavBar.scss'
 import {NavLink} from 'react-router-dom'
-import {Nav,Container,Row,Col} from 'react-bootstrap'
+import {Nav} from 'react-bootstrap'
 const NavBar = () => {
  
     return (
-
-     
+   
         <Nav variant="tabs" defaultActiveKey="/home" className="navbar">
           <Nav className="mr-auto nav-right ">
         <Nav.Item>
@@ -26,11 +25,6 @@ const NavBar = () => {
         <Nav.Item>
           <NavLink exact to={resume} target="_blank" activeClassName="active">Resume</NavLink>
         </Nav.Item>
-        {/* <Nav.Item>
-          <NavLink eventKey="disabled" disabled>
-            Disabled
-          </NavLink>
-        </Nav.Item> */}
         </Nav>
       </Nav>
     

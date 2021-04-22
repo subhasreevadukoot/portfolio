@@ -30,12 +30,12 @@ const About = () => {
       Technology Analyst at Bank of America
       </Card.Text>
       <Card.Text className='desc'>
-      <p align='justify'>I have strong experience in Software Development and I love the Web and all things <q>Web</q>! I have completed my Master's in Big Data Analytics and Bachelor's in Computer Science, Mathematics and Electronics.
+      <p align='justify'>Having spent five years (BSc -> MSc -> Career) in Software Development I realize that I am happy when I am coding and elated when the code is compiled, or now may be when the PR is merged !! . I absolutely love the Web and all things <q>Web</q>! I have completed my Master's in Big Data Analytics and Bachelor's in Computer Science, Mathematics and Electronics.
       I am a bit of everything that I have learnt and experienced, but most of my time now is spent in VS Code, Chrome Dev Tools and the console. I am amazed by the scale, depth and the endless opportunities
       of software development. </p>
       <p align='justify'>When I am not coding or learning to code in a new language, I love to read novels and write poetry. 
         Yeah, so my long term goal is to become a spontaneous mix of a poet and a developer !</p>
-      
+      <p align='justify'>P.S : This porfolio is a work in progress, and it will always be.</p>
       </Card.Text>
       <Card.Text className='icons'>
       <p></p>
