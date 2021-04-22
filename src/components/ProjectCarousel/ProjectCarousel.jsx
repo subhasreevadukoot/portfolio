@@ -56,7 +56,7 @@ return (
   <div className="card-body">
     <p className="card-text">
    <h3> Motivation</h3>
-<p>{projectDetails[match.params.id]['motivationText']}</p>
+<p style={{textAlign:'justify'}}>{projectDetails[match.params.id]['motivationText']}</p>
 <h3>Description</h3>
 <p style={{textAlign:'justify'}}>{projectDetails[match.params.id]['descriptionText']}</p>
 
