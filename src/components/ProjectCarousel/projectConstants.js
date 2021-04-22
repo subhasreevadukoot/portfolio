@@ -163,10 +163,9 @@ encoding, feature selection, replacement of missing values, conversion of dataty
 outliers, normalization, discretization, class imbalance etc. were analysed for
 effectiveness on this dataset.
 The readmission feature is converted to 1 for >30 and <30 and 0 for ‘NO’.
-• ‘encounder_id’ and patient_nbr’ contains all 10176 unique values, thus they
+‘encounder_id’ and patient_nbr’ contains all 10176 unique values, thus they
 are not useful for classification. ‘weight’ feature contains 97% missing values.
 It is thus not useful for data mining and is removed from the dataset. 
-Authors: A. Cronin and A. Siddig Griffith College 03/05/2020
 ‘payer_code’ has 40% missing values, ‘medical_speciality’ has 50% missing
 values. This is also removed after applying feature selection algorithms.
 ‘examide’ and ‘citoglipton’ contains ‘No’ for all instances and hence removed.
@@ -242,7 +241,7 @@ sourceLink:'https://github.com/subhasreevadukoot/Data-Mining'
 climateconvo:{name:'Climate Conversations and Visualizations',
 projectImage:[climateApp1,climateApp3,climateApp4],
 subTitleText:'Approach to contribute to combatting climate-change ',
-descriptionText:`The ultimate goal of this project is to contribute to the Global Climate Action activities to achieve a limit of 1.5 degree of global warming [1] and to reduce greenhouse gas emissions, the project’s primary goal is based on the fact that communities around the world can be change makers if they are given a platform
+descriptionText:`The ultimate goal of this project is to contribute to the Global Climate Action activities to achieve a limit of 1.5 degree of global warming and to reduce greenhouse gas emissions, the project’s primary goal is based on the fact that communities around the world can be change makers if they are given a platform
 Social media, especially Twitter is a great platforms to analyze public sentiments on climate change or green and sustainable living. However very little is done on this context. The project aims to be a great tool for fulfilling this commitment as it requires public to put effort. The visualization and interaction facility offered by the application makes this a great platform for the cause. 
 This web application with climate sentiment analysis and climate data visualization along with a forum for interaction allows for public participation and collective efforts which are the need of the hour, this is not the time when the planet can afford the denial of climate change. 
 We have developed a web application that can be a tool to mine public sentiments, visualize climate data patterns, develop strategies and moreover, this can be a forum where people concerned with the climate crisis can come together. 
