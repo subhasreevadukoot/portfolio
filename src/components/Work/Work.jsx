@@ -14,9 +14,9 @@ export const Work = () => {
    
   return (
     <div>
-   <CardDeck className="d-flex justify-content-center projects" style={{margin:'1rem'}}>
-          <Row>
-            <Card >
+   <CardDeck className="d-flex justify-content-center projects" fluid>
+          <Row fluid className="d-flex">
+            <Card>
               <Card.Body>
                  <Card.Img variant="top" src={tasked} />
                 <Link to={`/projects/${'tasked'}`} 
@@ -44,7 +44,7 @@ export const Work = () => {
 
             </Card>
           </Row>
-          <Row style={{marginTop:'1rem'}}>
+          <Row fluid className="d-flex">
             <Card >
 
               <Card.Body>
