@@ -14,7 +14,7 @@ export const Work = () => {
    
   return (
     <div>
-   <CardDeck className="d-flex justify-content-center projects" style={{justifyContent:'space-between'}}>
+   <CardDeck className="d-flex justify-content-center projects" style={{margin:'1rem'}}>
           <Row>
             <Card >
               <Card.Body>
@@ -44,7 +44,7 @@ export const Work = () => {
 
             </Card>
           </Row>
-          <Row>
+          <Row style={{marginTop:'1rem'}}>
             <Card >
 
               <Card.Body>
