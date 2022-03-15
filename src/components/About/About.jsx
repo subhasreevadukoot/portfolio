@@ -27,16 +27,14 @@ const About = () => {
 /></Card.Title>
       
       <Card.Text className='job'>
-      Technology Analyst at Bank of America
+      Software Engineer II at Dell Technologies
       </Card.Text>
-      <Card.Text className='desc'>
-      <p align='justify'>Having spent five years (BSc -> MSc -> Career) in Software Development I realize that I am happy when I am coding and elated when the code is compiled, or now may be when the PR is merged !! I absolutely love the Web and all things <q>Web</q>! I have completed my Master's in Big Data Analytics and Bachelor's in Computer Science, Mathematics and Electronics.
-      I am a bit of everything that I have learnt and experienced, but most of my time now is spent in VS Code, Chrome Dev Tools and the console. I am amazed by the scale, depth and the endless opportunities
-      of software development. </p>
+      {/* <Card.Text className='desc'>
+      <p align='justify'>Software Engineering for me is a beautiful blend of logic and creativity</p>
       <p align='justify'>When I am not coding or learning to code in a new language, I love to read novels and write poetry. 
         Yeah, so my long term goal is to become a spontaneous mix of a poet and a developer !</p>
       <p align='justify'>P.S : This porfolio is a work in progress, and it will always be.</p>
-      </Card.Text>
+      </Card.Text> */}
       <Card.Text className='icons'>
       <p></p>
      
@@ -67,15 +65,14 @@ const About = () => {
     <Card.Body>
       <Card.Title className="about-head">Experience</Card.Title>
       <Card.Text className="about-text">
-      <p><strong>Technology Analyst, Bank of America </strong></p>
+      <p><strong>Software Engineer II at Dell Technolgies </strong></p>
       <p>
       <ul>
-        <li>Designing and maintaining Technology Applications built using Oracle, Java and AngularJS for critical regulatory reporting purposes.</li>
+        <li>Building applications that help Dell Support Agents resolve issues with various Dell Assets like Powerstores and Poweredges real time.</li>
       
-<li>Collaborating with QA team to create efficient test plans and scripts while working together in an Agile team and participating in code review using BitBucket, Git and Agile tools.</li>
-<li>Gathering and translating requirements to technical design specifications keeping scalability in mind.</li>
-<li>Writing clean, robust code adhering to the standards and using version control to collaborate with other developers thereby ensuring smooth deployment and release.</li>
-<li>Acting as a buddy to the Interns in the team by providing Knowledge Transfer and overall support.  </li>
+<li>Involved in the complete lifecycle of software development in a team that follows TDD and DevOps Culture</li>
+<li>Technologies: Kotlin, Angular, SpringBoot, Microservices, Docker, JUnit, Jasmine, Jest</li>
+
 </ul>
       </p>
       </Card.Text>
@@ -137,11 +134,11 @@ Operating Systems</ListGroup.Item>
   <Card>
   <i class="far fa-keyboard"></i>
     <Card.Body>
-      <Card.Title className="about-head">Programming Languages and Frameworks</Card.Title>
+      <Card.Title className="about-head">Skills</Card.Title>
       <Card.Text className="about-text">
       <ListGroup variant="flush">
-      <ListGroup.Item >React, Redux, Django, Node JS</ListGroup.Item>
-  <ListGroup.Item >JavaScript, Java, Python, HTML </ListGroup.Item>
+
+  <ListGroup.Item >Java, SpringBoot, R, HTML </ListGroup.Item>
   <ListGroup.Item>MySQL, Oracle</ListGroup.Item>
   <ListGroup.Item>BootStrap, CSS, SASS </ListGroup.Item>
   <ListGroup.Item><strong>Tools:</strong> Visual Studio Code, Toad, Weka, RStudio, Jupyter Notebook, Tableau, IntelliJ, Chrome Dev Tools</ListGroup.Item>
