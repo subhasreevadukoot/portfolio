@@ -1,31 +1,34 @@
-import taskedApp1 from './../../assets/tasked-app.png';
+import taskedApp1 from "./../../assets/tasked-app.png";
 
-import shopperPic2 from './../../assets/shopper2.png';
-import shopperPic3 from './../../assets/shopper3.png';
-import shopperPic1 from './../../assets/shopper1.png';
-import climateApp1 from './../../assets/climate_app.png';
-import climateApp2 from './../../assets/climate_app-2.png';
-import climateApp3 from './../../assets/climate_app-3.png';
-import climateApp4 from './../../assets/climate_app-4.png'
-import taskedApp2 from './../../assets/tasked-2.png'
-import taskedApp3 from './../../assets/tasked-3.png'
-import postit2 from './../../assets/postit-2.png'
-import postit1 from './../../assets/postit-1.png'
-import blissfulcell1 from './../../assets/blissfulcell-1.png'
-import blissfulcell2 from './../../assets/blissfulcell-2.png'
-import blissfulcell3 from './../../assets/blissfulcell-3.png'
-import blissfulcell4 from './../../assets/blissfulcell-4.png'
-import dmat1 from './../../assets/dmat1.png'
-import dmat2 from './../../assets/dmat2.png'
-import dmat3 from './../../assets/dmat3.png'
+import shopperPic2 from "./../../assets/shopper2.png";
+import shopperPic3 from "./../../assets/shopper3.png";
+import shopperPic1 from "./../../assets/shopper1.png";
+import climateApp1 from "./../../assets/climate_app.png";
+import climateApp2 from "./../../assets/climate_app-2.png";
+import climateApp3 from "./../../assets/climate_app-3.png";
+import climateApp4 from "./../../assets/climate_app-4.png";
+import taskedApp2 from "./../../assets/tasked-2.png";
+import taskedApp3 from "./../../assets/tasked-3.png";
+import postit2 from "./../../assets/postit-2.png";
+import postit1 from "./../../assets/postit-1.png";
+import blissfulcell1 from "./../../assets/blissfulcell-1.png";
+import blissfulcell2 from "./../../assets/blissfulcell-2.png";
+import blissfulcell3 from "./../../assets/blissfulcell-3.png";
+import blissfulcell4 from "./../../assets/blissfulcell-4.png";
+import dmat1 from "./../../assets/dmat1.png";
+import dmat2 from "./../../assets/dmat2.png";
+import dmat3 from "./../../assets/dmat3.png";
 
-export const projectDetails={
-tasked:{name:'Tasked',
-projectImage:[taskedApp1,taskedApp2,taskedApp3],
-subTitleText:'Task Management App',
-descriptionText:'‘Tasked’ is a PaaS (Platform as a Service) application that is developed using Google App Engine with Python version 2.7. The application serves as a task management system for multiple users. This application provides users with login-logout and task creation services. In the application users can add task boards, which are collection of tasks and users to the database and modify details of existing task boards. The users can also invite other users to see and interact with boards they have created. The functionality to delete the entire board is available only for the created users. Users can also edit and delete tasks and mark them as complete. This application is taking advantage of parent-child relationships, KeyProperties of Google App Engine. Retrieval using keys is much faster than access using queries. Hence this increases the response time while retrieving values from the database. Models are designed and structured to allow for direct key access',
-motivationText:"The project's main aim was to develop a task management system for multiple users as a PaaS application.",
-designDecisions:`The application is named ‘Tasked’, as it conveys the use cases of the application in a single word. The logo is designed using Canva, and the logo narrates the purpose, the application is
+export const projectDetails = {
+  tasked: {
+    name: "Tasked",
+    projectImage: [taskedApp1, taskedApp2, taskedApp3],
+    subTitleText: "Task Management App",
+    descriptionText:
+      "‘Tasked’ is a PaaS (Platform as a Service) application that is developed using Google App Engine with Python version 2.7. The application serves as a task management system for multiple users. This application provides users with login-logout and task creation services. In the application users can add task boards, which are collection of tasks and users to the database and modify details of existing task boards. The users can also invite other users to see and interact with boards they have created. The functionality to delete the entire board is available only for the created users. Users can also edit and delete tasks and mark them as complete. This application is taking advantage of parent-child relationships, KeyProperties of Google App Engine. Retrieval using keys is much faster than access using queries. Hence this increases the response time while retrieving values from the database. Models are designed and structured to allow for direct key access",
+    motivationText:
+      "The project's main aim was to develop a task management system for multiple users as a PaaS application.",
+    designDecisions: `The application is named ‘Tasked’, as it conveys the use cases of the application in a single word. The logo is designed using Canva, and the logo narrates the purpose, the application is
 developed for. A task management system should be user friendly and convenient, as it will
 be utilised by multiple users of an organization. Hence, the design of this web application is
 implemented by keeping these factors in mind. Bootstrap is used for improving the aesthetics
@@ -63,52 +66,66 @@ properly formatted content and it looks neat and clean, when contrasted to the w
 background. A font stack is used in order to cater to a situation of unavailable fonts with
 different browsers. The fonts that are chosen are Tahoma and Verdana. This is to maintain
 the professional yet attractive look of the application.`,
-techStack:[
-    'Python',
-    'Google App Engine',
-    'Django',
-   'HTML, CSS, BootStrap'
-],
-sourceLink:'https://github.com/subhasreevadukoot/Tasked--Task-Management-App',
-},
+    techStack: [
+      "Python",
+      "Google App Engine",
+      "Django",
+      "HTML, CSS, BootStrap",
+    ],
+    sourceLink:
+      "https://github.com/subhasreevadukoot/Tasked--Task-Management-App",
+  },
 
-shopper:{name:'Shopper',
-projectImage:[shopperPic1,shopperPic2,shopperPic3],
-subTitleText:'E-commerce App',
-descriptionText:'Shopper is an e-commerce platform built with MERN Stack. The project was built while learning through a PluralSight course to get an in-depth understanding of the best practices in Web App development.',
-motivationText:"The main aim was to learn the steps involved in building a secure commercial e-commerce application. The project was taught as part of an online learning course by PluralSight",
-designDecisions:['Add to cart functionality','Users can create profile', 'Payment endpoint -PayPal', 'User Authentication with Jason Web Tokens','Uses a seeder dataset','Password Encryption'],
-techStack:[
-    'React JS, Redux, Express JS, MongoDB',
-    'JWT, Bcrypt',
-    'React-Router',
-    'MongoDB Atlas and Compass',
-   'React-BootStrap, SASS'
-],
-sourceLink:'https://github.com/subhasreevadukoot/Shopper',
+  shopper: {
+    name: "Shopper",
+    projectImage: [shopperPic1, shopperPic2, shopperPic3],
+    subTitleText: "E-commerce App",
+    descriptionText:
+      "Shopper is an e-commerce platform built with MERN Stack. The project was built while learning through a PluralSight course to get an in-depth understanding of the best practices in Web App development.",
+    motivationText:
+      "The main aim was to learn the steps involved in building a secure commercial e-commerce application. The project was taught as part of an online learning course by PluralSight",
+    designDecisions: [
+      "Add to cart functionality",
+      "Users can create profile",
+      "Payment endpoint -PayPal",
+      "User Authentication with Jason Web Tokens",
+      "Uses a seeder dataset",
+      "Password Encryption",
+    ],
+    techStack: [
+      "React JS, Redux, Express JS, MongoDB",
+      "JWT, Bcrypt",
+      "React-Router",
+      "MongoDB Atlas and Compass",
+      "React-BootStrap, SASS",
+    ],
+    sourceLink: "https://github.com/subhasreevadukoot/Shopper",
+  },
 
-},
-
-blissfulcell:{name:'Blissful Cell',
-projectImage:[blissfulcell1,blissfulcell2,blissfulcell4],
-subTitleText:'The happiness App',
-descriptionText:`BlissfulCell is a platform built with basic web development tools and languages. The project was built by following complete Software Development Life Cycle and keeping in mind the needs of different use cases. The intended users of the application are NGO organizations, volunteers, individuals. Users can use the website with or without registering. Registered users get some extra features. The application can be used by all age groups, children can use the site under the monitoring of their parents.
+  blissfulcell: {
+    name: "Blissful Cell",
+    projectImage: [blissfulcell1, blissfulcell2, blissfulcell4],
+    subTitleText: "The happiness App",
+    descriptionText: `BlissfulCell is a platform built with basic web development tools and languages. The project was built by following complete Software Development Life Cycle and keeping in mind the needs of different use cases. The intended users of the application are NGO organizations, volunteers, individuals. Users can use the website with or without registering. Registered users get some extra features. The application can be used by all age groups, children can use the site under the monitoring of their parents.
 The main focus while building this application was aesthetics, as the colors, look and feel matters to everyone, but matters more to people with mental health issues.`,
-motivationText:"Today’s hectic, high-paced lifestyle may trigger the “fight-or-flight” response repeatedly over days, weeks, months or even years. With little time between “stressful” events, our nervous systems can’t repair properly and eventually are unable to manage what used to be low-stress events. Body responds by sending out dangerously high level of stress hormones. These are harmful in the long run. When the stress cycle continues without relief, more than emotions can seem to be out of control and the results can begin to manifest as physical discomfort. The project aims to contribute to the efforts to tackle mental health issues",
-designDecisions:['Aesthetically appealing to the users', 'Fun activities like games to cater to younger audience','Regional music','Motivational quotes and stories'],
-techStack:[
-    'HTML,CSS',
-    'JavaScript',
-    'PHP',
-    'BootStrap, SASS'
-],
-sourceLink:'https://github.com/subhasreevadukoot/Website-Project/tree/master/csproject'
-},
+    motivationText:
+      "Today’s hectic, high-paced lifestyle may trigger the “fight-or-flight” response repeatedly over days, weeks, months or even years. With little time between “stressful” events, our nervous systems can’t repair properly and eventually are unable to manage what used to be low-stress events. Body responds by sending out dangerously high level of stress hormones. These are harmful in the long run. When the stress cycle continues without relief, more than emotions can seem to be out of control and the results can begin to manifest as physical discomfort. The project aims to contribute to the efforts to tackle mental health issues",
+    designDecisions: [
+      "Aesthetically appealing to the users",
+      "Fun activities like games to cater to younger audience",
+      "Regional music",
+      "Motivational quotes and stories",
+    ],
+    techStack: ["HTML,CSS", "JavaScript", "PHP", "BootStrap, SASS"],
+    sourceLink:
+      "https://github.com/subhasreevadukoot/Website-Project/tree/master/csproject",
+  },
 
-postit:{name:'PostIt',
-projectImage:[postit1,postit2,postit2],
-subTitleText:'Place to chit-chat',
-descriptionText:`POSTIt’ is a PaaS (Platform as a Service) application that is developed using Google App
+  postit: {
+    name: "PostIt",
+    projectImage: [postit1, postit2, postit2],
+    subTitleText: "Place to chit-chat",
+    descriptionText: `POSTIt’ is a PaaS (Platform as a Service) application that is developed using Google App
 Engine with Python version 2.7. The application serves as a simple version of social media
 network for multiple users. This application allows users to login and logout, and also create
 a profile for themselves with desired profile picture and information about them. In the
@@ -121,10 +138,10 @@ followers and following. Users can also post comments on the posts. The applicat
 elegantly designed and resembles the UI of the familiar social networks. This application is
 taking advantage of Blobstore of Google App Engine which allows the storage of binary large
 objects [1]. `,
-motivationText:`This web application was developed for the requirement of Master's in Big Data Management
+    motivationText: `This web application was developed for the requirement of Master's in Big Data Management
 and Analytics, Semester 2- Cloud Computing module. The aim of this assignment isto develop
 a simplified replica of the social media platform Instagram as a PaaS application.`,
-designDecisions:`The simplified replica of Instagram is named as ‘POSTIt, as it meaningfully represents the
+    designDecisions: `The simplified replica of Instagram is named as ‘POSTIt, as it meaningfully represents the
 intent of the application. The name was chosen after understanding that the users are more
 interested in the kind of posts in their social media accounts. The main focus while building
 this application was to utilize the beautiful design options that Bootstrap provides to give a
@@ -144,19 +161,22 @@ caption. The login page is developed with animated images designed using Canva t
 the mundane look of having a single login button in a plain white background. Appealing
 images give the users an engaging feel, even though the kind of images users likes can be
 really subjective.`,
-techStack:[
-    'Python',
-    'Google App Engine',
-    'Django',
-   'HTML, CSS, BootStrap'
-],
-sourceLink:'https://github.com/subhasreevadukoot/POSTIt--Instagram-replica-Application-'
-},
+    techStack: [
+      "Python",
+      "Google App Engine",
+      "Django",
+      "HTML, CSS, BootStrap",
+    ],
+    sourceLink:
+      "https://github.com/subhasreevadukoot/POSTIt--Instagram-replica-Application-",
+  },
 
-dmat:{name:'Data Mining Algorithms and Techniques Project',
-projectImage:[dmat3,dmat1,dmat2],
-subTitleText:'Analyzing diabetics data using Classification, Association Rule Mining and Clustering',
-descriptionText:`The objective of this data mining process is to predict the risk of readmission of diabetes
+  dmat: {
+    name: "Data Mining Algorithms and Techniques Project",
+    projectImage: [dmat3, dmat1, dmat2],
+    subTitleText:
+      "Analyzing diabetics data using Classification, Association Rule Mining and Clustering",
+    descriptionText: `The objective of this data mining process is to predict the risk of readmission of diabetes
 patients into the 130 hospitals in the U.S. Effectiveness of any machine learning algorithm
 relies on the efficient preprocessing techniques. Preprocessing techniques such as feature
 encoding, feature selection, replacement of missing values, conversion of datatypes,
@@ -195,7 +215,7 @@ reduces the complexity of the final classifier, reduce overfitting to increase
 predictive accuracy. Apriori Algorithm with different parameters was used to perform
 Association Rule Mining. A total of three experiments were carried out on
 dataset. arff. `,
-motivationText:`World Health Organization defines diabetes as “a chronic, metabolic disease
+    motivationText: `World Health Organization defines diabetes as “a chronic, metabolic disease
 characterized by elevated levels of blood glucose (or blood sugar), which leads over time
 to serious damage to the heart, blood vessels, eyes, kidneys, and nerves.” (WHO,2020).
 According to Harvard Medical School, there are two types of diabetes: type 1 diabetes
@@ -217,37 +237,40 @@ blood sugar) causes unplanned readmission in diabetes patients (ScienceDaily, 20
 Readmission cause extreme financial burden on the diabetes patients and decrease the
 reputation of the hospitals. Predicting readmissions can help in strategy making,
 enhanced diagnosis, pattern prediction and thereby help the patients and hospitals alike. `,
-designDecisions:['Predicted diabetes readmission risks through classification techniques and association rule mining after understanding the effects of diabetes in patients through literature review and detailed study of the Diabetes 130-US hospitals for years 1999- 2008 Data Set and its attributes',
-    `Applied various feature selection methods in Weka to identify the best features
+    designDecisions: [
+      "Predicted diabetes readmission risks through classification techniques and association rule mining after understanding the effects of diabetes in patients through literature review and detailed study of the Diabetes 130-US hospitals for years 1999- 2008 Data Set and its attributes",
+      `Applied various feature selection methods in Weka to identify the best features
     and to vary the hyperparameters to find and evaluate the models with better
     performance and accuracy after training the model and testing on the trained model.
-    `,`Implemented and evauated ensemble methods such as Bagging, Boosting in Weka
+    `,
+      `Implemented and evauated ensemble methods such as Bagging, Boosting in Weka
     Experimenter to understand the effect of these ensemble methods on the model with
     J48 algorithm.
-    `,`Discovered patterns by generating association rules from the dataset using
+    `,
+      `Discovered patterns by generating association rules from the dataset using
     Association Rule Mining, Apriori Algorithms and to evaluate the rules from their
-    confidence, support and lift.` ],
-techStack:[
-    'Weka',
-    'Machine Learning Models',
-    'Bagging Algorithms',
-    'Boosting Algorithms'
-],
-sourceLink:'https://github.com/subhasreevadukoot/Data-Mining'
-},
+    confidence, support and lift.`,
+    ],
+    techStack: [
+      "Weka",
+      "Machine Learning Models",
+      "Bagging Algorithms",
+      "Boosting Algorithms",
+    ],
+    sourceLink: "https://github.com/subhasreevadukoot/Data-Mining",
+  },
 
-
-
-climateconvo:{name:'Climate Conversations and Visualizations',
-projectImage:[climateApp1,climateApp3,climateApp4],
-subTitleText:'Approach to contribute to combatting climate-change ',
-descriptionText:`The ultimate goal of this project is to contribute to the Global Climate Action activities to achieve a limit of 1.5 degree of global warming and to reduce greenhouse gas emissions, the project’s primary goal is based on the fact that communities around the world can be change makers if they are given a platform
+  climateconvo: {
+    name: "Climate Conversations and Visualizations",
+    projectImage: [climateApp1, climateApp3, climateApp4],
+    subTitleText: "Approach to contribute to combatting climate-change ",
+    descriptionText: `The ultimate goal of this project is to contribute to the Global Climate Action activities to achieve a limit of 1.5 degree of global warming and to reduce greenhouse gas emissions, the project’s primary goal is based on the fact that communities around the world can be change makers if they are given a platform
 Social media, especially Twitter is a great platforms to analyze public sentiments on climate change or green and sustainable living. However very little is done on this context. The project aims to be a great tool for fulfilling this commitment as it requires public to put effort. The visualization and interaction facility offered by the application makes this a great platform for the cause. 
 This web application with climate sentiment analysis and climate data visualization along with a forum for interaction allows for public participation and collective efforts which are the need of the hour, this is not the time when the planet can afford the denial of climate change. 
 We have developed a web application that can be a tool to mine public sentiments, visualize climate data patterns, develop strategies and moreover, this can be a forum where people concerned with the climate crisis can come together. 
 Our research shows that ensemble learning Bagging with Linear SVC is the best performing algorithm with 76% accuracy followed Linear SVC and then  Logistic regression Naïve Bayes and AdaBoost. 
 Twitter users do not always reflect the entire communities around the world. However, with approximately more than 338 million users worldwide comprising of government agencies, officials, nongovernmental organizations and other prominent persons, Twitter proves to be an extremely valuable resource for opinion mining. `,
-motivationText:`Years of globalization and industrial revolution have tragically devastated the
+    motivationText: `Years of globalization and industrial revolution have tragically devastated the
 environment and our sustainability practices have disappeared almost completely. 
 
 The motivation for the project is the realization that the world is facing
@@ -256,7 +279,8 @@ efforts to reduce destructive human intervention and promote constructive
 collaboration.
 Now more than ever, every bit of effort helps!!
 `,
-designDecisions:[`
+    designDecisions: [
+      `
 The main idea of this project is to analyse sentiments of the public in the matters of
 climate change, global warming and increasing natural hazards. This can contribute in
 the efforts in saving the planet, by using the power of opinion mining to create
@@ -289,7 +313,8 @@ of data analytics and climate science also. There is a forum where the public ca
 ask questions or start discussions based on the data that they see on the dashboard each
 day. Each user will have to register with the application, and their general data such as
 name, email and password will be collected for security reasons. The data will be stored
-in a safe and private database.`,`The foundation of the application lies in the ability to differentiate sentiments into belief
+in a safe and private database.`,
+      `The foundation of the application lies in the ability to differentiate sentiments into belief
 and denial which is a challenging task given the unavailability of data and little prior
 work. The application will use climate data- especially data on air quality index,
 emission reports, loss of forest cover and so on that is released by World Bank, NASA,
@@ -301,17 +326,20 @@ Ireland will be of value to the project. Their website clearly shows the trend o
 various emissions, air quality, waste management and so on. The users of the
 application will be public of Ireland, non-governmental organizations working towards
 a sustainable planet and other volunteers. 
-`],
-techStack:[
-    'Python, Tableau',
-    'MongoDB,Tweepy',
-    'Machine Learning Models',
-    'Scikit-Learn,NLTK',
-   'Canvas JS','BootStrap, SASS'
-],
-researchObjective:['Compare the effectiveness of machine learning algorithms to analyse the sentiments of the public relating to man-made climate change','Develop a platform for climate data related dashboards and a forum for user interaction'],
-sourceLink:'https://github.com/subhasreevadukoot/Climate-data-analytics',
-}
-
-}
-
+`,
+    ],
+    techStack: [
+      "Python, Tableau",
+      "MongoDB,Tweepy",
+      "Machine Learning Models",
+      "Scikit-Learn,NLTK",
+      "Canvas JS",
+      "BootStrap, SASS",
+    ],
+    researchObjective: [
+      "Compare the effectiveness of machine learning algorithms to analyse the sentiments of the public relating to man-made climate change",
+      "Develop a platform for climate data related dashboards and a forum for user interaction",
+    ],
+    sourceLink: "https://github.com/subhasreevadukoot/Climate-data-analytics",
+  },
+};
